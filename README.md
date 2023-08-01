@@ -7,5 +7,5 @@ Unity assets created by beckadamtheinventor.
 
 ## Procedural Open Simplex Shader
 
-[Link to readme] (https://github.com/beckadamtheinventor/IcybeckaStudios/tree/master/Shaders/ProceduralOpenSimplex)
+(Link to readme) [https://github.com/beckadamtheinventor/IcybeckaStudios/tree/master/Shaders/ProceduralOpenSimplex]
 
