@@ -11,4 +11,4 @@ Unity assets created by beckadamtheinventor.
 
 [Download](https://github.com/beckadamtheinventor/IcybeckaStudios/raw/master/Shaders/IcybeckaProceduralOpenSimplexShader1.0.unitypackage)
 
-![screenshot](../../tree/master/Shaders/ProceduralOpenSimplex/capture.png "Screenshot")
+![screenshot](https://github.com/beckadamtheinventor/IcybeckaStudios/raw/master/Shaders/ProceduralOpenSimplex/capture.png "Screenshot")
