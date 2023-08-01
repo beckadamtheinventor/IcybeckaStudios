@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ProceduralRockSurfaceMaterial
+  m_Shader: {fileID: 4800000, guid: 9aacf7ca0a5a6d141ae8826a28c43f03, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _USEWORLDSPACE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BlurScale: 5
+    - _GlossinessScale: 1
+    - _InvertGlossiness: 0
+    - _InvertMetallic: 0
+    - _InvertOcclusion: 0
+    - _MaxBlurDistance: 100
+    - _MaxGlossiness: 0.1
+    - _MaxMetallic: 0
+    - _MaxOcclusion: 0.9
+    - _MetallicScale: 1
+    - _MinBlurDistance: 3
+    - _MinGlossiness: 0.1
+    - _MinMetallic: 0
+    - _MinOcclusion: 0.8
+    - _OcclusionScale: 1
+    - _OctaveFalloff: 0.6
+    - _OctaveScale: 2
+    - _Octaves: 2
+    - _OutputScale: -0.185
+    - _UseUVSpace: 0
+    - _UseWorldSpace: 1
+    m_Colors:
+    - _ColorOver: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 1}
+    - _ColorUnder: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
+    - _CoordinateOffset: {r: -10, g: 0, b: 0, a: 0}
+    - _CoordinateScale: {r: 8, g: 16, b: 8, a: 0}
+  m_BuildTextureStacks: []
