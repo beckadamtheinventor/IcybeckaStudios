@@ -7,5 +7,6 @@ Unity assets created by beckadamtheinventor.
 
 ## Procedural Open Simplex Shader
 
-[Link to readme](../../tree/master/Shaders/ProceduralOpenSimplex#opensimplex-procedural-material-surface-shader)
+[Readme](../../tree/master/Shaders/ProceduralOpenSimplex#opensimplex-procedural-material-surface-shader)
 
+[Download](../master/Shaders/IcybeckaProceduralOpenSimplexShader1.0.unitypackage)
