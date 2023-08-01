@@ -9,4 +9,4 @@ Unity assets created by beckadamtheinventor.
 
 [Readme](../../tree/master/Shaders/ProceduralOpenSimplex#opensimplex-procedural-material-surface-shader)
 
-[Download](../master/Shaders/IcybeckaProceduralOpenSimplexShader1.0.unitypackage)
+[Download](https://github.com/beckadamtheinventor/IcybeckaStudios/raw/master/Shaders/IcybeckaProceduralOpenSimplexShader1.0.unitypackage)
