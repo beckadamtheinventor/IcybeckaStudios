@@ -2,6 +2,8 @@
 # OpenSimplex Procedural Material Surface Shader
 Version 1.0.
 
+Tested on Unity 2021.3.23f1. Might not be compatible with 2019.
+
 This shader generates dynamic materials using OpenSimplex noise, with a bunch of parameters to facilitate creating a wide variety of materials.
 Included in this package are several example materials, as well as a transparent variant of the shader.
 
