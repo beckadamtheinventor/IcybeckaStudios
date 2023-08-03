@@ -4,6 +4,7 @@ Shader "Icybecka/Procedural/Surface/OpenSimplexTransparent"
     {
 		[Toggle] _UseWorldSpace ("Use World Coordinates for Noise", Float) = 0.0
 		[Toggle] _UseObjectSpace ("Use Object Coordinates for Noise", Float) = 0.0
+		[Toggle] _UseLockedRotationObjectSpace ("Use Object Coordinates with Locked Rotation", Float) = 0.0
 		[Toggle] _UseUVSpace ("Use UV Coordinates for Noise", Float) = 0.0
 		_CoordinateOffset ("Coordinate Offset", Vector) = (0, 0, 0, 0)
 		_CoordinateScale("Coordinate Scale", Vector) = (1.0, 1.0, 1.0, 0.0)
@@ -59,9 +60,10 @@ Shader "Icybecka/Procedural/Surface/OpenSimplexTransparent"
 			INTERNAL_DATA
         };
 
-		float _UseWorldSpace;
-		float _UseObjectSpace;
-		float _UseUVSpace;
+		half _UseWorldSpace;
+		half _UseObjectSpace;
+		half _UseLockedRotationObjectSpace;
+		half _UseUVSpace;
 
 		sampler2D _MainTex;
 		fixed4 _ColorUnder;
@@ -111,8 +113,10 @@ Shader "Icybecka/Procedural/Surface/OpenSimplexTransparent"
 			float3 coords;
 			if (_UseWorldSpace > 0.0f && _UseUVSpace > 0.0f)
 				coords = ((floor(IN.worldPos.xyz) + float3(IN.uv_MainTex.x, 0, IN.uv_MainTex.y) - 0.5f) * _CoordinateScale) + _CoordinateOffset;
-			else if (_UseObjectSpace > 0.0f)
+			else if (_UseLockedRotationObjectSpace > 0.0f)
 				coords = (IN.worldPos - unity_ObjectToWorld._m03_m13_m23) * _CoordinateScale + _CoordinateOffset;
+			else if (_UseObjectSpace > 0.0f)
+				coords = mul(IN.worldPos - unity_ObjectToWorld._m03_m13_m23, unity_ObjectToWorld) * _CoordinateScale + _CoordinateOffset;
 			else if (_UseUVSpace > 0.0f)
 				coords = (float3(IN.uv_MainTex.x, 0, IN.uv_MainTex.y) * _CoordinateScale) + _CoordinateOffset;
 			else

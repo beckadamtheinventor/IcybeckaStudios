@@ -1,6 +1,6 @@
 
 # OpenSimplex Procedural Material Surface Shader
-Version 1.0.
+Version 1.1.
 
 This shader generates dynamic materials using OpenSimplex noise, with a bunch of parameters to facilitate creating a wide variety of materials.
 Included in this package are several example materials, as well as a transparent variant of the shader.
@@ -26,7 +26,13 @@ Should not be used with `UV Space Coordinates` or `Object Space Coordinates`.
 
 ## Use Object Coordinates for Noise
 
-Select to use object space coordinates for generating noise. (world space offset by object position)
+Select to use object space coordinates and rotation for generating noise. (world space offset by object position and rotated)
+Should not be used with `World Space Coordinates` or `UV Space Coordinates`.
+
+
+## Use Object Coordinates with Locked Rotation
+
+Select to use object space coordinates without rotation for generating noise. (world space offset by object position)
 Should not be used with `World Space Coordinates` or `UV Space Coordinates`.
 
 

@@ -7,11 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GreenBluePlanetMaterialObjectSpace
+  m_Name: GreenBluePlanetMaterialObjectSpaceNoRotate
   m_Shader: {fileID: 4800000, guid: 9aacf7ca0a5a6d141ae8826a28c43f03, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
-  - _USEOBJECTSPACE_ON
+  - _USELOCKEDROTATIONOBJECTSPACE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -103,8 +103,8 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UseLockedRotationObjectSpace: 0
-    - _UseObjectSpace: 1
+    - _UseLockedRotationObjectSpace: 1
+    - _UseObjectSpace: 0
     - _UseUVSpace: 0
     - _UseWorldSpace: 0
     - _ZWrite: 1

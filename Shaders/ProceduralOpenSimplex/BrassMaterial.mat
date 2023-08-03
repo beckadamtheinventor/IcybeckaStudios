@@ -7,11 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GreenBluePlanetMaterialObjectSpace
+  m_Name: BrassMaterial
   m_Shader: {fileID: 4800000, guid: 9aacf7ca0a5a6d141ae8826a28c43f03, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
-  - _USEOBJECTSPACE_ON
+  - _INVERTGLOSSINESS_ON
+  - _INVERTOCCLUSION_ON
+  - _USEWORLDSPACE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -57,11 +59,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _AddMetallic: -1
     - _AddSmoothness: 1
-    - _BlurScale: 5
+    - _BlurScale: 3
     - _BumpScale: 1
     - _CoordinateBaseModulus: 100
     - _CoordinateScale: 0.2
@@ -71,32 +77,32 @@ Material:
     - _EmissionScale: 1
     - _GlossMapScale: 1
     - _Glossiness: 0
-    - _GlossinessScale: 2.7
+    - _GlossinessScale: 0.48
     - _GlossyReflections: 1
     - _HeightScale: 1
     - _InvertEmission: 0
-    - _InvertGlossiness: 0
+    - _InvertGlossiness: 1
     - _InvertMetallic: 0
-    - _InvertOcclusion: 0
-    - _MaxGlossiness: 0.7
-    - _MaxMetallic: 0.5
+    - _InvertOcclusion: 1
+    - _MaxGlossiness: 0.5
+    - _MaxMetallic: 0.9
     - _MaxOcclusion: 1
     - _Metallic: 0
-    - _MetallicScale: -0.25
-    - _MinBlurDistance: 4
-    - _MinGlossiness: 0.1
+    - _MetallicScale: 6
+    - _MinBlurDistance: 100
+    - _MinGlossiness: 0.5
     - _MinHeight: 0.05
-    - _MinMetallic: 0
-    - _MinOcclusion: 0.4
+    - _MinMetallic: 0.8
+    - _MinOcclusion: 1
     - _Mode: 0
     - _MultiplyMetallic: 0
     - _MultiplySmoothness: 0
     - _OcclusionScale: 6
     - _OcclusionStrength: 1
-    - _OctaveFalloff: -0.5
-    - _OctaveScale: 2.5
-    - _Octaves: 4
-    - _OutputScale: 10
+    - _OctaveFalloff: 0.3
+    - _OctaveScale: 1
+    - _Octaves: 1
+    - _OutputScale: 1
     - _Parallax: 0.02
     - _Seed: 4.16
     - _SmoothnessTextureChannel: 0
@@ -104,18 +110,19 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _UseLockedRotationObjectSpace: 0
-    - _UseObjectSpace: 1
+    - _UseObjectSpace: 0
     - _UseUVSpace: 0
-    - _UseWorldSpace: 0
+    - _UseWorldSpace: 1
+    - _WorldSpace: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 1, g: 1, b: 1, a: 1}
     - _Color2: {r: 1, g: 0.17777777, b: 0, a: 1}
-    - _ColorOver: {r: 0.038981855, g: 0.60599023, b: 0.6886792, a: 1}
-    - _ColorUnder: {r: 0.24110004, g: 0.5943396, b: 0.27109206, a: 1}
-    - _CoordinateOffset: {r: 0.79, g: 0.2, b: 0.75, a: 0}
-    - _CoordinateScale: {r: 2.5, g: 2.6, b: 2.5, a: 0}
+    - _ColorOver: {r: 0.8862745, g: 0.74509805, b: 0.38039216, a: 1}
+    - _ColorUnder: {r: 0.8962264, g: 0.75650597, b: 0.39323276, a: 1}
+    - _CoordinateOffset: {r: 1.86, g: 0.12, b: -0.89, a: 0}
+    - _CoordinateScale: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MaxEmission: {r: 0, g: 0, b: 0, a: 1}
     - _MinEmission: {r: 0, g: 0, b: 0, a: 1}
