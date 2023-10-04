@@ -84,17 +84,17 @@ Shader "Icybecka/Surface/MultipleDetailMaps"
 			// detail 1
 			if (tex2D(_DetailMask1, IN.uv_MainTex).r > 0.5f) {
 				c1 = tex2D(_DetailTex1, IN.uv_DetailTex1);
-				c = c * lerp(1, c1, _MulDetail1) + lerp(0, c1, _AddDetail1);
+				c = c * c1 * (1 + _MulDetail1) + c1 * _AddDetail1;
 			}
 			// detail 2
 			if (tex2D(_DetailMask2, IN.uv_MainTex).r > 0.5f) {
 				c1 = tex2D(_DetailTex2, IN.uv_DetailTex2);
-				c = c * lerp(1, c1, _MulDetail2) + lerp(0, c1, _AddDetail2);
+				c = c * c1 * (1 + _MulDetail2) + c1 * _AddDetail2;
 			}
 			// detail 3
 			if (tex2D(_DetailMask3, IN.uv_MainTex).r > 0.5f) {
 				c1 = tex2D(_DetailTex3, IN.uv_DetailTex3);
-				c = c * lerp(1, c1, _MulDetail3) + lerp(0, c1, _AddDetail3);
+				c = c * c1 * (1 + _MulDetail3) + c1 * _AddDetail3;
 			}
 			// Normals
 			fixed3 n = UnpackNormal(tex2D(_NormalMap, IN.uv_NormalMap));
