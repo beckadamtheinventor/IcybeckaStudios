@@ -130,6 +130,10 @@ def ConversionTaskThread(fname, dname, md):
 	return True
 
 def ReductionWindow():
+	try:
+		os.makedirs(TEMP_DIR)
+	except:
+		pass
 	for i in range(6):
 		try:
 			os.remove(os.path.join(TEMP_DIR, f"preview{i+1}.png"))
